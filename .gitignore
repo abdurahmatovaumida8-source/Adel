@@ -4,3 +4,4 @@ db.sqlite3
 staticfiles/
 .env
 *.mo
+node_modules/

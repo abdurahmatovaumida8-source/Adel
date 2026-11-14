@@ -1,0 +1,23 @@
+{
+  "name": "adel",
+  "version": "1.0.0",
+  "description": "Единая высокотехнологичная цифровая платформа, которая сочетает в себе продающую витрину (Landing Page) для привлечения новых студентов и закрытую экосистему (Web-приложение / LMS) для автоматизации обучения и управления процессами академии.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdurahmatovaumida8-source/Adel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdurahmatovaumida8-source/Adel/issues"
+  },
+  "homepage": "https://github.com/abdurahmatovaumida8-source/Adel#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
