@@ -1,0 +1,448 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-14 13:37+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: accounts/forms.py:9
+msgid "First name"
+msgstr "Ism"
+
+#: accounts/forms.py:10
+msgid "Last name"
+msgstr "Familiya"
+
+#: accounts/forms.py:11 core/forms.py:15
+msgid "Phone number"
+msgstr "Telefon raqami"
+
+#: accounts/models.py:8
+msgid "Student"
+msgstr "Talaba"
+
+#: accounts/models.py:9 templates/courses/course_detail.html:10
+msgid "Teacher"
+msgstr "O'qituvchi"
+
+#: accounts/models.py:10
+msgid "Administrator"
+msgstr "Administrator"
+
+#: accounts/models.py:13
+msgid "role"
+msgstr "rol"
+
+#: accounts/models.py:15 core/models.py:15
+msgid "phone number"
+msgstr "telefon raqami"
+
+#: accounts/models.py:16
+msgid "biography"
+msgstr "tarjimai hol"
+
+#: config/settings.py:111
+msgid "Uzbek"
+msgstr "O'zbekcha"
+
+#: config/settings.py:112
+msgid "Russian"
+msgstr "Ruscha"
+
+#: config/settings.py:113
+msgid "English"
+msgstr "Inglizcha"
+
+#: core/forms.py:14
+msgid "Full name"
+msgstr "To'liq ism"
+
+#: core/forms.py:16
+msgid "Course of interest"
+msgstr "Qiziqtirgan kurs"
+
+#: core/forms.py:17
+msgid "Message"
+msgstr "Xabar"
+
+#: core/models.py:9
+msgid "New"
+msgstr "Yangi"
+
+#: core/models.py:10
+msgid "Contacted"
+msgstr "Bog'lanildi"
+
+#: core/models.py:11
+msgid "Enrolled"
+msgstr "Ro'yxatga olindi"
+
+#: core/models.py:12
+msgid "Rejected"
+msgstr "Rad etildi"
+
+#: core/models.py:14
+msgid "full name"
+msgstr "to'liq ism"
+
+#: core/models.py:18
+msgid "course of interest"
+msgstr "qiziqtirgan kurs"
+
+#: core/models.py:23
+msgid "message"
+msgstr "xabar"
+
+#: core/models.py:25
+msgid "status"
+msgstr "holat"
+
+#: core/models.py:31
+msgid "application"
+msgstr "ariza"
+
+#: core/models.py:32
+msgid "applications"
+msgstr "arizalar"
+
+#: core/views.py:27
+msgid "Thank you! We received your application and will call you soon."
+msgstr "Rahmat! Arizangiz qabul qilindi, tez orada sizga qo'ng'iroq qilamiz."
+
+#: courses/models.py:7 courses/models.py:41 courses/models.py:57
+msgid "title"
+msgstr "sarlavha"
+
+#: courses/models.py:8
+msgid "slug"
+msgstr "slug"
+
+#: courses/models.py:9
+msgid "short description"
+msgstr "qisqa tavsif"
+
+#: courses/models.py:10
+msgid "full description"
+msgstr "to'liq tavsif"
+
+#: courses/models.py:13
+msgid "teacher"
+msgstr "o'qituvchi"
+
+#: courses/models.py:20
+msgid "duration (weeks)"
+msgstr "davomiyligi (hafta)"
+
+#: courses/models.py:22
+msgid "price (UZS)"
+msgstr "narxi (so'm)"
+
+#: courses/models.py:24
+msgid "published"
+msgstr "e'lon qilingan"
+
+#: courses/models.py:25
+msgid "featured on landing page"
+msgstr "bosh sahifada ko'rsatilsin"
+
+#: courses/models.py:30
+msgid "course"
+msgstr "kurs"
+
+#: courses/models.py:31
+msgid "courses"
+msgstr "kurslar"
+
+#: courses/models.py:42 courses/models.py:60
+msgid "order"
+msgstr "tartib"
+
+#: courses/models.py:46
+msgid "module"
+msgstr "modul"
+
+#: courses/models.py:47
+msgid "modules"
+msgstr "modullar"
+
+#: courses/models.py:58
+msgid "content"
+msgstr "mazmun"
+
+#: courses/models.py:59
+msgid "video URL"
+msgstr "video havolasi"
+
+#: courses/models.py:64
+msgid "lesson"
+msgstr "dars"
+
+#: courses/models.py:65
+msgid "lessons"
+msgstr "darslar"
+
+#: courses/models.py:84
+msgid "enrollment"
+msgstr "ro'yxatga olish"
+
+#: courses/models.py:85
+msgid "enrollments"
+msgstr "ro'yxatga olishlar"
+
+#: courses/models.py:114 courses/models.py:115
+msgid "lesson progress"
+msgstr "dars jarayoni"
+
+#: templates/accounts/login.html:3 templates/accounts/login.html:8
+#: templates/accounts/login.html:22 templates/accounts/register.html:22
+#: templates/base.html:32
+msgid "Log in"
+msgstr "Kirish"
+
+#: templates/accounts/login.html:12
+msgid "Invalid username or password."
+msgstr "Login yoki parol noto'g'ri."
+
+#: templates/accounts/login.html:15
+msgid "Username"
+msgstr "Login"
+
+#: templates/accounts/login.html:19
+msgid "Password"
+msgstr "Parol"
+
+#: templates/accounts/login.html:24
+msgid "No account yet?"
+msgstr "Hisobingiz yo'qmi?"
+
+#: templates/accounts/login.html:25 templates/accounts/register.html:3
+#: templates/accounts/register.html:19 templates/base.html:33
+msgid "Sign up"
+msgstr "Ro'yxatdan o'tish"
+
+#: templates/accounts/register.html:8
+msgid "Create a student account"
+msgstr "Talaba hisobini yarating"
+
+#: templates/accounts/register.html:21
+msgid "Already have an account?"
+msgstr "Hisobingiz bormi?"
+
+#: templates/base.html:22 templates/base.html:72
+msgid "Courses"
+msgstr "Kurslar"
+
+#: templates/base.html:23 templates/base.html:73 templates/core/home.html:24
+msgid "Teachers"
+msgstr "O'qituvchilar"
+
+#: templates/base.html:24 templates/base.html:74 templates/core/home.html:47
+msgid "Apply"
+msgstr "Ariza berish"
+
+#: templates/base.html:26 templates/courses/course_detail.html:7
+#: templates/courses/dashboard.html:3
+msgid "My learning"
+msgstr "Mening o'qishim"
+
+#: templates/base.html:29
+msgid "Log out"
+msgstr "Chiqish"
+
+#: templates/base.html:67
+msgid ""
+"A modern vocational academy: practical skills, real teachers, real careers."
+msgstr ""
+"Zamonaviy kasb-hunar akademiyasi: amaliy ko'nikmalar, haqiqiy ustozlar, "
+"haqiqiy karyera."
+
+#: templates/base.html:70
+msgid "Navigation"
+msgstr "Navigatsiya"
+
+#: templates/base.html:78
+msgid "Contact"
+msgstr "Aloqa"
+
+#: templates/core/home.html:11
+msgid "Master a profession that pays"
+msgstr "Daromad keltiradigan kasbni egallang"
+
+#: templates/core/home.html:14
+msgid ""
+"Practical vocational courses taught by industry professionals. Learn online "
+"or on campus, build a portfolio, and start your career."
+msgstr ""
+"Soha mutaxassislari o'rgatadigan amaliy kasb-hunar kurslari. Onlayn yoki "
+"akademiyada o'qing, portfolio yarating va karyerangizni boshlang."
+
+#: templates/core/home.html:17
+msgid "Apply now"
+msgstr "Hozir ariza bering"
+
+#: templates/core/home.html:18
+msgid "Browse courses"
+msgstr "Kurslarni ko'rish"
+
+#: templates/core/home.html:22
+msgid "Active courses"
+msgstr "Faol kurslar"
+
+#: templates/core/home.html:23
+msgid "Students"
+msgstr "Talabalar"
+
+#: templates/core/home.html:25
+msgid "Enrollments"
+msgstr "Ro'yxatga olinganlar"
+
+#: templates/core/home.html:32
+msgid "Featured courses"
+msgstr "Asosiy kurslar"
+
+#: templates/core/home.html:33
+msgid "Hands-on programs designed with employers."
+msgstr "Ish beruvchilar bilan birga ishlab chiqilgan amaliy dasturlar."
+
+#: templates/core/home.html:41
+#, python-format
+msgid "%(weeks)s weeks"
+msgstr "%(weeks)s hafta"
+
+#: templates/core/home.html:43
+msgid "Free"
+msgstr "Bepul"
+
+#: templates/core/home.html:52
+msgid ""
+"Courses are coming soon. Leave an application below and we'll notify you!"
+msgstr "Kurslar tez orada. Quyida ariza qoldiring — sizga xabar beramiz!"
+
+#: templates/core/home.html:59
+msgid "Why study with us"
+msgstr "Nega bizda o'qish kerak"
+
+#: templates/core/home.html:61
+msgid "Practice first"
+msgstr "Avval amaliyot"
+
+#: templates/core/home.html:61
+#, python-format
+msgid "80%% of every course is hands-on work on real projects."
+msgstr "Har bir kursning 80%% qismi haqiqiy loyihalar ustida amaliy ish."
+
+#: templates/core/home.html:62
+msgid "Expert teachers"
+msgstr "Tajribali ustozlar"
+
+#: templates/core/home.html:62
+msgid "Mentors with years of industry experience."
+msgstr "Ko'p yillik soha tajribasiga ega mentorlar."
+
+#: templates/core/home.html:63
+msgid "Certificate"
+msgstr "Sertifikat"
+
+#: templates/core/home.html:63
+msgid "Receive an academy certificate recognized by partners."
+msgstr "Hamkorlar tomonidan tan olingan akademiya sertifikatini oling."
+
+#: templates/core/home.html:64
+msgid "Career support"
+msgstr "Karyera ko'magi"
+
+#: templates/core/home.html:64
+msgid "We help our graduates find internships and jobs."
+msgstr "Bitiruvchilarimizga amaliyot va ish topishda yordam beramiz."
+
+#: templates/core/home.html:72
+msgid "Our teachers"
+msgstr "Bizning ustozlar"
+
+#: templates/core/home.html:90
+msgid "Apply to the academy"
+msgstr "Akademiyaga ariza topshiring"
+
+#: templates/core/home.html:91
+msgid "Leave your contact details — our admissions team will call you back."
+msgstr ""
+"Aloqa ma'lumotlaringizni qoldiring — qabul bo'limi sizga qo'ng'iroq qiladi."
+
+#: templates/core/home.html:119
+msgid "Send application"
+msgstr "Arizani yuborish"
+
+#: templates/courses/course_detail.html:15
+msgid "Enroll in this course"
+msgstr "Ushbu kursga yozilish"
+
+#: templates/courses/course_detail.html:21
+msgid "Curriculum"
+msgstr "O'quv dasturi"
+
+#: templates/courses/course_detail.html:33
+msgid "Open"
+msgstr "Ochish"
+
+#: templates/courses/course_detail.html:39
+msgid "Lessons coming soon."
+msgstr "Darslar tez orada."
+
+#: templates/courses/course_detail.html:44
+msgid "The curriculum is being prepared."
+msgstr "O'quv dasturi tayyorlanmoqda."
+
+#: templates/courses/dashboard.html:7
+#, python-format
+msgid "Welcome, %(name)s!"
+msgstr "Xush kelibsiz, %(name)s!"
+
+#: templates/courses/dashboard.html:8
+msgid "Continue learning where you left off."
+msgstr "O'qishni to'xtagan joyingizdan davom ettiring."
+
+#: templates/courses/dashboard.html:10
+msgid "My courses"
+msgstr "Mening kurslarim"
+
+#: templates/courses/dashboard.html:20
+#, python-format
+msgid "%(pct)s%% complete"
+msgstr "%(pct)s%% bajarildi"
+
+#: templates/courses/dashboard.html:25
+msgid "You are not enrolled in any course yet. Pick one below!"
+msgstr "Siz hali birorta kursga yozilmagansiz. Quyidan tanlang!"
+
+#: templates/courses/dashboard.html:28
+msgid "Available courses"
+msgstr "Mavjud kurslar"
+
+#: templates/courses/dashboard.html:36
+msgid "View course"
+msgstr "Kursni ko'rish"
+
+#: templates/courses/dashboard.html:41
+msgid "No other courses available right now."
+msgstr "Hozircha boshqa kurslar mavjud emas."
+
+#: templates/courses/lesson_detail.html:21
+msgid "Lesson completed"
+msgstr "Dars yakunlandi"
+
+#: templates/courses/lesson_detail.html:25
+msgid "Mark as completed"
+msgstr "Yakunlangan deb belgilash"

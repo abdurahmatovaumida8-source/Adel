@@ -1,0 +1,447 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-14 13:37+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: accounts/forms.py:9
+msgid "First name"
+msgstr "Имя"
+
+#: accounts/forms.py:10
+msgid "Last name"
+msgstr "Фамилия"
+
+#: accounts/forms.py:11 core/forms.py:15
+msgid "Phone number"
+msgstr "Номер телефона"
+
+#: accounts/models.py:8
+msgid "Student"
+msgstr "Студент"
+
+#: accounts/models.py:9 templates/courses/course_detail.html:10
+msgid "Teacher"
+msgstr "Преподаватель"
+
+#: accounts/models.py:10
+msgid "Administrator"
+msgstr "Администратор"
+
+#: accounts/models.py:13
+msgid "role"
+msgstr "роль"
+
+#: accounts/models.py:15 core/models.py:15
+msgid "phone number"
+msgstr "номер телефона"
+
+#: accounts/models.py:16
+msgid "biography"
+msgstr "биография"
+
+#: config/settings.py:111
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#: config/settings.py:112
+msgid "Russian"
+msgstr "Русский"
+
+#: config/settings.py:113
+msgid "English"
+msgstr "Английский"
+
+#: core/forms.py:14
+msgid "Full name"
+msgstr "ФИО"
+
+#: core/forms.py:16
+msgid "Course of interest"
+msgstr "Интересующий курс"
+
+#: core/forms.py:17
+msgid "Message"
+msgstr "Сообщение"
+
+#: core/models.py:9
+msgid "New"
+msgstr "Новая"
+
+#: core/models.py:10
+msgid "Contacted"
+msgstr "Связались"
+
+#: core/models.py:11
+msgid "Enrolled"
+msgstr "Зачислен"
+
+#: core/models.py:12
+msgid "Rejected"
+msgstr "Отклонена"
+
+#: core/models.py:14
+msgid "full name"
+msgstr "ФИО"
+
+#: core/models.py:18
+msgid "course of interest"
+msgstr "интересующий курс"
+
+#: core/models.py:23
+msgid "message"
+msgstr "сообщение"
+
+#: core/models.py:25
+msgid "status"
+msgstr "статус"
+
+#: core/models.py:31
+msgid "application"
+msgstr "заявка"
+
+#: core/models.py:32
+msgid "applications"
+msgstr "заявки"
+
+#: core/views.py:27
+msgid "Thank you! We received your application and will call you soon."
+msgstr "Спасибо! Мы получили вашу заявку и скоро вам перезвоним."
+
+#: courses/models.py:7 courses/models.py:41 courses/models.py:57
+msgid "title"
+msgstr "название"
+
+#: courses/models.py:8
+msgid "slug"
+msgstr "слаг"
+
+#: courses/models.py:9
+msgid "short description"
+msgstr "краткое описание"
+
+#: courses/models.py:10
+msgid "full description"
+msgstr "полное описание"
+
+#: courses/models.py:13
+msgid "teacher"
+msgstr "преподаватель"
+
+#: courses/models.py:20
+msgid "duration (weeks)"
+msgstr "длительность (недель)"
+
+#: courses/models.py:22
+msgid "price (UZS)"
+msgstr "цена (сум)"
+
+#: courses/models.py:24
+msgid "published"
+msgstr "опубликован"
+
+#: courses/models.py:25
+msgid "featured on landing page"
+msgstr "показывать на главной"
+
+#: courses/models.py:30
+msgid "course"
+msgstr "курс"
+
+#: courses/models.py:31
+msgid "courses"
+msgstr "курсы"
+
+#: courses/models.py:42 courses/models.py:60
+msgid "order"
+msgstr "порядок"
+
+#: courses/models.py:46
+msgid "module"
+msgstr "модуль"
+
+#: courses/models.py:47
+msgid "modules"
+msgstr "модули"
+
+#: courses/models.py:58
+msgid "content"
+msgstr "содержание"
+
+#: courses/models.py:59
+msgid "video URL"
+msgstr "ссылка на видео"
+
+#: courses/models.py:64
+msgid "lesson"
+msgstr "урок"
+
+#: courses/models.py:65
+msgid "lessons"
+msgstr "уроки"
+
+#: courses/models.py:84
+msgid "enrollment"
+msgstr "зачисление"
+
+#: courses/models.py:85
+msgid "enrollments"
+msgstr "зачисления"
+
+#: courses/models.py:114 courses/models.py:115
+msgid "lesson progress"
+msgstr "прогресс урока"
+
+#: templates/accounts/login.html:3 templates/accounts/login.html:8
+#: templates/accounts/login.html:22 templates/accounts/register.html:22
+#: templates/base.html:32
+msgid "Log in"
+msgstr "Войти"
+
+#: templates/accounts/login.html:12
+msgid "Invalid username or password."
+msgstr "Неверный логин или пароль."
+
+#: templates/accounts/login.html:15
+msgid "Username"
+msgstr "Логин"
+
+#: templates/accounts/login.html:19
+msgid "Password"
+msgstr "Пароль"
+
+#: templates/accounts/login.html:24
+msgid "No account yet?"
+msgstr "Ещё нет аккаунта?"
+
+#: templates/accounts/login.html:25 templates/accounts/register.html:3
+#: templates/accounts/register.html:19 templates/base.html:33
+msgid "Sign up"
+msgstr "Регистрация"
+
+#: templates/accounts/register.html:8
+msgid "Create a student account"
+msgstr "Создать аккаунт студента"
+
+#: templates/accounts/register.html:21
+msgid "Already have an account?"
+msgstr "Уже есть аккаунт?"
+
+#: templates/base.html:22 templates/base.html:72
+msgid "Courses"
+msgstr "Курсы"
+
+#: templates/base.html:23 templates/base.html:73 templates/core/home.html:24
+msgid "Teachers"
+msgstr "Преподаватели"
+
+#: templates/base.html:24 templates/base.html:74 templates/core/home.html:47
+msgid "Apply"
+msgstr "Подать заявку"
+
+#: templates/base.html:26 templates/courses/course_detail.html:7
+#: templates/courses/dashboard.html:3
+msgid "My learning"
+msgstr "Моё обучение"
+
+#: templates/base.html:29
+msgid "Log out"
+msgstr "Выйти"
+
+#: templates/base.html:67
+msgid ""
+"A modern vocational academy: practical skills, real teachers, real careers."
+msgstr ""
+"Современная профессиональная академия: практические навыки, настоящие "
+"преподаватели, настоящая карьера."
+
+#: templates/base.html:70
+msgid "Navigation"
+msgstr "Навигация"
+
+#: templates/base.html:78
+msgid "Contact"
+msgstr "Контакты"
+
+#: templates/core/home.html:11
+msgid "Master a profession that pays"
+msgstr "Освойте профессию, которая приносит доход"
+
+#: templates/core/home.html:14
+msgid ""
+"Practical vocational courses taught by industry professionals. Learn online "
+"or on campus, build a portfolio, and start your career."
+msgstr ""
+"Практические профессиональные курсы от специалистов индустрии. Учитесь "
+"онлайн или в академии, создайте портфолио и начните карьеру."
+
+#: templates/core/home.html:17
+msgid "Apply now"
+msgstr "Подать заявку"
+
+#: templates/core/home.html:18
+msgid "Browse courses"
+msgstr "Смотреть курсы"
+
+#: templates/core/home.html:22
+msgid "Active courses"
+msgstr "Активных курсов"
+
+#: templates/core/home.html:23
+msgid "Students"
+msgstr "Студентов"
+
+#: templates/core/home.html:25
+msgid "Enrollments"
+msgstr "Зачислений"
+
+#: templates/core/home.html:32
+msgid "Featured courses"
+msgstr "Популярные курсы"
+
+#: templates/core/home.html:33
+msgid "Hands-on programs designed with employers."
+msgstr "Практические программы, разработанные вместе с работодателями."
+
+#: templates/core/home.html:41
+#, python-format
+msgid "%(weeks)s weeks"
+msgstr "%(weeks)s недель"
+
+#: templates/core/home.html:43
+msgid "Free"
+msgstr "Бесплатно"
+
+#: templates/core/home.html:52
+msgid ""
+"Courses are coming soon. Leave an application below and we'll notify you!"
+msgstr "Курсы скоро появятся. Оставьте заявку ниже — мы вам сообщим!"
+
+#: templates/core/home.html:59
+msgid "Why study with us"
+msgstr "Почему учиться у нас"
+
+#: templates/core/home.html:61
+msgid "Practice first"
+msgstr "Сначала практика"
+
+#: templates/core/home.html:61
+#, python-format
+msgid "80%% of every course is hands-on work on real projects."
+msgstr "80%% каждого курса — практическая работа над реальными проектами."
+
+#: templates/core/home.html:62
+msgid "Expert teachers"
+msgstr "Опытные преподаватели"
+
+#: templates/core/home.html:62
+msgid "Mentors with years of industry experience."
+msgstr "Наставники с многолетним опытом в индустрии."
+
+#: templates/core/home.html:63
+msgid "Certificate"
+msgstr "Сертификат"
+
+#: templates/core/home.html:63
+msgid "Receive an academy certificate recognized by partners."
+msgstr "Получите сертификат академии, признанный партнёрами."
+
+#: templates/core/home.html:64
+msgid "Career support"
+msgstr "Поддержка карьеры"
+
+#: templates/core/home.html:64
+msgid "We help our graduates find internships and jobs."
+msgstr "Помогаем выпускникам найти стажировку и работу."
+
+#: templates/core/home.html:72
+msgid "Our teachers"
+msgstr "Наши преподаватели"
+
+#: templates/core/home.html:90
+msgid "Apply to the academy"
+msgstr "Подать заявку в академию"
+
+#: templates/core/home.html:91
+msgid "Leave your contact details — our admissions team will call you back."
+msgstr "Оставьте контактные данные — приёмная комиссия вам перезвонит."
+
+#: templates/core/home.html:119
+msgid "Send application"
+msgstr "Отправить заявку"
+
+#: templates/courses/course_detail.html:15
+msgid "Enroll in this course"
+msgstr "Записаться на курс"
+
+#: templates/courses/course_detail.html:21
+msgid "Curriculum"
+msgstr "Учебная программа"
+
+#: templates/courses/course_detail.html:33
+msgid "Open"
+msgstr "Открыть"
+
+#: templates/courses/course_detail.html:39
+msgid "Lessons coming soon."
+msgstr "Уроки скоро появятся."
+
+#: templates/courses/course_detail.html:44
+msgid "The curriculum is being prepared."
+msgstr "Учебная программа готовится."
+
+#: templates/courses/dashboard.html:7
+#, python-format
+msgid "Welcome, %(name)s!"
+msgstr "Добро пожаловать, %(name)s!"
+
+#: templates/courses/dashboard.html:8
+msgid "Continue learning where you left off."
+msgstr "Продолжайте обучение с того места, где остановились."
+
+#: templates/courses/dashboard.html:10
+msgid "My courses"
+msgstr "Мои курсы"
+
+#: templates/courses/dashboard.html:20
+#, python-format
+msgid "%(pct)s%% complete"
+msgstr "%(pct)s%% пройдено"
+
+#: templates/courses/dashboard.html:25
+msgid "You are not enrolled in any course yet. Pick one below!"
+msgstr "Вы пока не записаны ни на один курс. Выберите ниже!"
+
+#: templates/courses/dashboard.html:28
+msgid "Available courses"
+msgstr "Доступные курсы"
+
+#: templates/courses/dashboard.html:36
+msgid "View course"
+msgstr "Смотреть курс"
+
+#: templates/courses/dashboard.html:41
+msgid "No other courses available right now."
+msgstr "Других курсов сейчас нет."
+
+#: templates/courses/lesson_detail.html:21
+msgid "Lesson completed"
+msgstr "Урок завершён"
+
+#: templates/courses/lesson_detail.html:25
+msgid "Mark as completed"
+msgstr "Отметить как завершённый"

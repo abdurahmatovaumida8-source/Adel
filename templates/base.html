@@ -1,0 +1,88 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Tarmoqlararo Kasb-Hunar{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="{% url 'core:home' %}" class="flex items-center gap-2">
+            <span class="bg-indigo-600 text-white font-extrabold rounded-lg px-2.5 py-1.5 text-lg">TK</span>
+            <span class="font-bold text-lg hidden sm:inline">Tarmoqlararo Kasb-Hunar</span>
+        </a>
+        <nav class="flex items-center gap-4 text-sm font-semibold">
+            <a href="{% url 'core:home' %}#courses" class="hover:text-indigo-600">{% trans "Courses" %}</a>
+            <a href="{% url 'core:home' %}#teachers" class="hover:text-indigo-600 hidden sm:inline">{% trans "Teachers" %}</a>
+            <a href="{% url 'core:home' %}#apply" class="hover:text-indigo-600 hidden sm:inline">{% trans "Apply" %}</a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'courses:dashboard' %}" class="hover:text-indigo-600">{% trans "My learning" %}</a>
+                <form method="post" action="{% url 'accounts:logout' %}" class="inline">
+                    {% csrf_token %}
+                    <button type="submit" class="text-slate-500 hover:text-indigo-600">{% trans "Log out" %}</button>
+                </form>
+            {% else %}
+                <a href="{% url 'accounts:login' %}" class="hover:text-indigo-600">{% trans "Log in" %}</a>
+                <a href="{% url 'accounts:register' %}" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">{% trans "Sign up" %}</a>
+            {% endif %}
+            <form action="{% url 'set_language' %}" method="post" class="inline">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.get_full_path }}">
+                <select name="language" onchange="this.form.submit()"
+                        class="border border-slate-300 rounded-md px-1.5 py-1 text-xs bg-white">
+                    {% get_current_language as CURRENT %}
+                    {% get_available_languages as LANGS %}
+                    {% for code, name in LANGS %}
+                        <option value="{{ code }}" {% if code == CURRENT %}selected{% endif %}>{{ code|upper }}</option>
+                    {% endfor %}
+                </select>
+            </form>
+        </nav>
+    </div>
+</header>
+
+{% if messages %}
+    <div class="max-w-6xl mx-auto px-4 mt-4 w-full">
+        {% for message in messages %}
+            <div class="bg-green-100 border border-green-300 text-green-800 rounded-lg px-4 py-3 mb-2">{{ message }}</div>
+        {% endfor %}
+    </div>
+{% endif %}
+
+<main class="flex-1">
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="bg-slate-900 text-slate-300 mt-16">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid sm:grid-cols-3 gap-8 text-sm">
+        <div>
+            <p class="font-bold text-white text-lg mb-2">Tarmoqlararo Kasb-Hunar</p>
+            <p>{% trans "A modern vocational academy: practical skills, real teachers, real careers." %}</p>
+        </div>
+        <div>
+            <p class="font-semibold text-white mb-2">{% trans "Navigation" %}</p>
+            <ul class="space-y-1">
+                <li><a href="{% url 'core:home' %}#courses" class="hover:text-white">{% trans "Courses" %}</a></li>
+                <li><a href="{% url 'core:home' %}#teachers" class="hover:text-white">{% trans "Teachers" %}</a></li>
+                <li><a href="{% url 'core:home' %}#apply" class="hover:text-white">{% trans "Apply" %}</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="font-semibold text-white mb-2">{% trans "Contact" %}</p>
+            <p>Tashkent, Uzbekistan</p>
+            <p>+998 90 000 00 00</p>
+            <p>info@tarmoq-akademiya.uz</p>
+        </div>
+    </div>
+    <div class="border-t border-slate-700 text-center text-xs py-4">© {% now "Y" %} Tarmoqlararo Kasb-Hunar</div>
+</footer>
+
+</body>
+</html>
