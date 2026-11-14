@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Sign up" %} — Tarmoqlararo Kasb-Hunar{% endblock %}
+
+{% block content %}
+<div class="max-w-md mx-auto px-4 py-16">
+    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+        <h1 class="text-2xl font-extrabold mb-6">{% trans "Create a student account" %}</h1>
+        <form method="post" class="grid gap-4">
+            {% csrf_token %}
+            {% for field in form %}
+            <div>
+                <label class="block text-sm font-semibold mb-1">{{ field.label }}</label>
+                {{ field }}
+                {% if field.errors %}<p class="text-red-600 text-xs mt-1">{{ field.errors|join:" " }}</p>{% endif %}
+                {% if field.help_text %}<p class="text-xs text-slate-400 mt-1">{{ field.help_text }}</p>{% endif %}
+            </div>
+            {% endfor %}
+            <button type="submit" class="bg-indigo-600 text-white font-bold py-3 rounded-xl hover:bg-indigo-700">{% trans "Sign up" %}</button>
+        </form>
+        <p class="text-sm text-slate-500 mt-4">{% trans "Already have an account?" %}
+            <a href="{% url 'accounts:login' %}" class="text-indigo-600 font-semibold">{% trans "Log in" %}</a>
+        </p>
+    </div>
+</div>
+<style>
+    form input, form select { width: 100%; border: 1px solid #cbd5e1; border-radius: 0.5rem; padding: 0.625rem 0.75rem; }
+</style>
+{% endblock %}

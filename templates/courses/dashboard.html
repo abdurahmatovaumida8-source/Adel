@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "My learning" %} — Tarmoqlararo Kasb-Hunar{% endblock %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-extrabold mb-1">{% blocktrans with name=user.first_name|default:user.username %}Welcome, {{ name }}!{% endblocktrans %}</h1>
+    <p class="text-slate-500 mb-10">{% trans "Continue learning where you left off." %}</p>
+
+    <h2 class="text-xl font-bold mb-4">{% trans "My courses" %}</h2>
+    {% if enrollments %}
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        {% for enrollment in enrollments %}
+        <a href="{% url 'courses:course_detail' enrollment.course.slug %}"
+           class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition block">
+            <h3 class="font-bold mb-2">{{ enrollment.course.title }}</h3>
+            <div class="w-full bg-slate-100 rounded-full h-2.5 mb-2">
+                <div class="bg-indigo-600 h-2.5 rounded-full" style="width: {{ enrollment.progress_percent }}%"></div>
+            </div>
+            <p class="text-sm text-slate-500">{% blocktrans with pct=enrollment.progress_percent %}{{ pct }}% complete{% endblocktrans %}</p>
+        </a>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p class="text-slate-400 mb-12">{% trans "You are not enrolled in any course yet. Pick one below!" %}</p>
+    {% endif %}
+
+    <h2 class="text-xl font-bold mb-4">{% trans "Available courses" %}</h2>
+    {% if available_courses %}
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for course in available_courses %}
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col">
+            <h3 class="font-bold mb-2">{{ course.title }}</h3>
+            <p class="text-sm text-slate-500 flex-1">{{ course.short_description }}</p>
+            <a href="{% url 'courses:course_detail' course.slug %}"
+               class="mt-4 text-center bg-indigo-50 text-indigo-700 font-semibold py-2 rounded-lg hover:bg-indigo-100">{% trans "View course" %}</a>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p class="text-slate-400">{% trans "No other courses available right now." %}</p>
+    {% endif %}
+</div>
+{% endblock %}
